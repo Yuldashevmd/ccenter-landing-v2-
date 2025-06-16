@@ -2,8 +2,6 @@
 export default {
   darkMode: false,
   content: ['./src/**/*.{js,ts,jsx,tsx,html}'], // MUHIM
-  theme: {
-    extend: {},
-  },
+  theme: {},
   plugins: [],
 };
