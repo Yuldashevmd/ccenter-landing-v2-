@@ -21,7 +21,6 @@ body {
   background-color: #000;
   overflow-y: auto;
   overflow-x: hidden;
-  scroll-snap-type: y mandatory;
 
   &::-webkit-scrollbar {
     display: none;

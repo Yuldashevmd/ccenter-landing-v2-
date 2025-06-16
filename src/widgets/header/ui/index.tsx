@@ -28,18 +28,18 @@ export function Header() {
   };
 
   return (
-    <header className="w-full flex justify-between items-center relative top-15 z-[99] px-6">
+    <header className="w-full flex justify-between items-center relative top-6 sm:top-15 z-[99]  md:px-6 md:py-2 gap-4">
       <Image
         src="/dark/logo.svg"
-        className="w-[11rem] h-auto md:w-[17rem] cursor-pointer"
+        className="h-auto w-[13rem] md:w-[17rem] cursor-pointer"
         width={287}
         height={43}
         alt="logo"
         id="logo"
       />
 
-      <div className="flex items-center gap-4">
-        <div className="relative flex items-center border border-[#3664DA] rounded-full overflow-hidden min-w-[21.2rem] min-h-[3rem] cursor-pointer">
+      <div className="flex items-center gap-4  sm:w-auto">
+        <div className="hidden md:flex relative flex items-center border border-[#3664DA] rounded-full overflow-hidden min-h-[3rem] cursor-pointer w-full sm:w-[21.2rem]">
           <div
             ref={bgEffect}
             className="absolute h-[80%] bg-[#4169e1] rounded-full inset-[5px] transition-transform duration-400 ease-in-out"
@@ -48,7 +48,7 @@ export function Header() {
           ></div>
 
           <div
-            className="text-white w-[48.5%] h-full text-center z-10 cursor-pointer"
+            className="text-white w-[50%] h-full text-center z-10 cursor-pointer"
             onMouseEnter={() => handleMouseEnter('0%')}
             onClick={openVirtualNumberLink}
           >
@@ -59,7 +59,7 @@ export function Header() {
 
           <Link
             href="/contact"
-            className="text-white w-[48.5%] h-full text-center z-10 cursor-pointer"
+            className="text-white w-[50%] h-full text-center z-10 cursor-pointer"
             onMouseEnter={() => handleMouseEnter('100%')}
           >
             <button className="w-full h-full bg-transparent text-sm md:text-md">
@@ -67,6 +67,7 @@ export function Header() {
             </button>
           </Link>
         </div>
+
         <ChangeLng />
       </div>
     </header>
