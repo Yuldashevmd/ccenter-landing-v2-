@@ -6,6 +6,7 @@ import { routing } from 'i18n/routing';
 import { Providers } from 'shared/lib';
 import { Header } from 'widgets/header';
 import { Footer } from 'widgets/footer';
+import { SideNav } from 'shared/ui';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -35,7 +36,12 @@ export default async function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased container`}>
         <Providers>
           <Header />
-          {children}
+          <div className="relative">
+            <aside>
+              <SideNav />
+            </aside>
+            <main>{children}</main>
+          </div>
           <Footer />
         </Providers>
       </body>

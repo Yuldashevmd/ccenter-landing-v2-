@@ -2,5 +2,11 @@
   "welcome": "Welcome",
   "goodbye": "Goodbye",
   "virtual_number": "Virtual number",
-  "contact_us": "Contact us"
+  "contact_us": "Contact us",
+  "about us": "About us",
+  "services": "Services",
+  "additionals": "Additional services",
+  "features": "Indicators",
+  "reviews": "Reviews",
+  "news": "News"
 }
