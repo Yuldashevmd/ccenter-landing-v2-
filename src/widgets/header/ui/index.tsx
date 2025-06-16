@@ -28,10 +28,10 @@ export function Header() {
   };
 
   return (
-    <header className="w-full flex justify-between items-center relative top-6 sm:top-15 z-[99]  md:px-6 md:py-2 gap-4">
+    <header className="w-full flex justify-between items-center mt-7 lg:mt-[3.2rem]  md:py-2 gap-4 z-[99]">
       <Image
         src="/dark/logo.svg"
-        className="h-auto w-[13rem] md:w-[17rem] cursor-pointer"
+        className="h-auto w-[13rem] md:w-[18rem] cursor-pointer"
         width={287}
         height={43}
         alt="logo"
