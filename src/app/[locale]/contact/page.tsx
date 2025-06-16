@@ -1,7 +1,9 @@
-export function Contacts (){
+import { ContactForm } from 'features/contact-form';
+
+export default function Contacts() {
   return (
     <div>
-      Hello Contacts
+      <ContactForm />
     </div>
-  )
+  );
 }

@@ -1,14 +1,22 @@
-import { useLng } from 'shared/lib';
-import { Button } from 'shared/ui';
+'use client';
 
-export default function Home() {
-  const { t } = useLng();
+import { SidebarLayout } from 'shared/ui';
+import { AdditionalsSection } from 'widgets/additionals-section';
+import { FeatureSection } from 'widgets/features-section';
+import { HeroSection } from 'widgets/hero-section';
+import { NewsSection } from 'widgets/news-list';
+import { ReviewsSection } from 'widgets/reviews-section';
+import { ServicesSection } from 'widgets/services-section';
 
+export default function HomePage() {
   return (
-    <div>
-      <Button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">
-        {t('welcome')}
-      </Button>
-    </div>
+    <SidebarLayout>
+      <HeroSection />
+      <ServicesSection />
+      <AdditionalsSection />
+      <FeatureSection />
+      <ReviewsSection />
+      <NewsSection />
+    </SidebarLayout>
   );
 }

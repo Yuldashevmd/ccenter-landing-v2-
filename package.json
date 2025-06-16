@@ -16,6 +16,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.487.0",
     "eslint-define-config": "^2.1.0",
+    "framer-motion": "^11.0.0",
     "next": "15.2.5",
     "next-intl": "^4.0.2",
     "react": "^19.0.0",
