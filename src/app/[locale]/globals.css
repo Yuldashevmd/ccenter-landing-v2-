@@ -28,7 +28,8 @@ body {
   }
 }
 .section {
-  scroll-snap-align: start;
+  width: 80%;
+  margin-left: auto;
 }
 
 .container {
@@ -52,6 +53,4 @@ body {
   background-color: #4169e1;
   box-shadow: 0 0 10px 0 #4169e1;
 }
-.nav-dot:not(.active) .tooltip {
-  display: none;
-}
+
