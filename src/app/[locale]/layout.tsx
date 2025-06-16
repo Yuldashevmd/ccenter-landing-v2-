@@ -5,6 +5,8 @@ import { notFound } from 'next/navigation';
 import { hasLocale } from 'next-intl';
 import { routing } from 'i18n/routing';
 import { Providers } from 'shared/lib';
+import { Header } from 'widgets/header';
+import { Footer } from 'widgets/footer';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -38,7 +40,11 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+          </Providers>
       </body>
     </html>
   );
