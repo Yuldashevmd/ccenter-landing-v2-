@@ -1,5 +1,5 @@
-import { useLng } from '@/shared/lib';
-import { Button } from '@/shared/ui';
+import { useLng } from 'shared/lib';
+import { Button } from 'shared/ui';
 
 export default function Home() {
   const { t } = useLng();
